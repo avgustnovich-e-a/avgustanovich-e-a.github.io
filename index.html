@@ -1,0 +1,133 @@
+<html>
+ <head>
+  <script src="jquery-3.4.1.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript"></script>
+ </head>
+ <body>
+  <table>
+   <tr> 
+    <td>
+	 <p>
+	  <img src="img/avgustanovich.jpeg" alt="aaa" height="200">
+	 </p>
+	</td>
+	<td>
+	 <p>
+	  <h1> Августанович Екатерина Анатольевна</h1>
+      <b> Адрес: </b> Челябинск <br>
+      <b> Опыт работы: </b> Нет <br>
+      <b> Телефон: </b> +7(908)978-37-29
+     </p>
+	</td>
+   </tr>
+  </table>
+  
+  
+  <h2><b>Таблица основных степеней:</b></h2>
+  <table align="center" bordercolor=#000000 border="1" width="100%" cellpadding="1" cellspacing="0">
+   <style>
+    .col1 {width: 5%;}
+	.col2 {width: 19%;}
+   </style>
+  <tr>
+    <b>
+	<th class="col1"> An</th>
+	<th class="col2">1</th>
+	<th class="col2">2</th>
+	<th class="col2">3</th>
+	<th class="col2">4</th>
+	<th class="col2">5</th>
+	</b>
+   </tr>
+   <tr>
+    <th>2</th>
+	<td>2 </td>
+	<td>4 </td>
+	<td> 8</td>
+	<td> 16</td>
+	<td> 32</td>
+   </tr>
+   <tr>
+    <th>3</th>
+	<td> 3</td>
+	<td> 9</td>
+	<td> 27</td>
+	<td> 81</td>
+	<td> 243</td>
+   </tr>
+   <tr>
+    <th>4</th>
+	<td>4</td>
+	<td>16</td>
+	<td>64</td>
+	<td>256</td>
+	<td>1024</td>
+   </tr>
+   <tr>
+    <th>5</th>
+	<td>5</td>
+	<td>25</td>
+	<td>125</td>
+	<td>625</td>
+	<td>3125</td>
+   </tr>
+  </table>
+  <table>
+   <tr>
+   <td height="150"></td>
+   </tr>
+   <tr>
+    <td>Телефон:</td>
+    <td>Имя:</td>
+   </tr>
+   <tr>
+    <td>
+     <p>
+       <input id="phone" type="text" maxlength="10" placeholder="+7 (999) 999-99-99">
+        <script>
+         $(function(){ $("#phone").mask("+7 (999) 999-99-99"); });
+        </script> 
+     </p>
+    </td>
+	<td>
+     <p>
+       <input id="name" type="text" maxlength="15" placeholder="Екатерина">
+        <script>
+         $(function(){ $("#name").mask("aaaaaaaaa"); });
+        </script> 
+     </p>
+    </td>
+	</tr>
+	</table>
+	<table align="center">
+	 <tr>
+	  <td>
+	   <button id="width-block" class="width-block" onclick="tgl_div()"><style> a.button9:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+a.button9:active {
+  top: 1px;
+}
+</style>Кликните сюда чтобы узнать меня подробнее</button>
+       <script>
+       function tgl_div() 
+		{
+         div = document.querySelector('div');
+         div.style.display = div.style.display == "none" ? "block" : "none";
+        }
+       </script>
+       </td>
+	  </tr>
+	</table>
+    <div id="wrapper-block" style="display:none; class="wrapper-block">
+	<p>
+	 Меня зовут Августанович Екатерина Анатольевна, студент второго курса академической магистратуры направления «Управление в технических системах» в Южно-Уральском государственном университете, отличница учебы. В рамках выпускного квалификационного проекта бакалавриата исследовала возможности применения интернета вещей в технологическом процессе.
+Полученные знания применяю в качестве базиса для решения задачи повышения эффективности освещения рабочей зоны. Решение позволит найти компромисс между комфортностью восприятия света и экономии электроэнергии не только для домашних хозяйств, но и для повышения энергоэффективности производства.
+	</p>
+	</div>
+	</td>
+	</tr>	
+ </body>
+</html>
